@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: $light-colo r;
+  background-color: $light-color;
   font-family: $font-stack;
   line-height: 1.6;
 }
@@ -23,7 +23,7 @@ a {
 }
 
 .showcase {
-  @include set-background($primary-color);
+  @include set-background($color);
   height: 600px;
 
   nav {
