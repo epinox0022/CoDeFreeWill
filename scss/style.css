@@ -5,6 +5,25 @@
   overflow: auto;
 }
 
+.btn-secondary, .btn-primary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+.btn-secondary:hover, .btn-primary:hover {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: white;
+  color: #333;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,8 +45,8 @@ a {
 }
 
 .showcase {
-  background-color: #0e6cff;
-  color: #fff;
+  background-color: #e0ffff;
+  color: #333;
   height: 600px;
 }
 .showcase nav {
@@ -41,6 +60,9 @@ a {
 }
 .showcase nav li {
   padding: 15px;
+}
+.showcase nav a {
+  color: #333;
 }
 .showcase a:hover {
   color: #ff8700;
@@ -60,8 +82,4 @@ a {
 }
 .showcase-content p {
   margin: 20px 0px;
-}
-
-a {
-  color: #fff;
 }

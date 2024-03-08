@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "buttons";
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,7 @@
 }
 
 body {
-  background-color: $light-color;
+  background-color: $light-colo r;
   font-family: $font-stack;
   line-height: 1.6;
 }
@@ -22,8 +23,7 @@ a {
 }
 
 .showcase {
-  background-color: $primary-color;
-  color: #fff;
+  @include set-background($primary-color);
   height: 600px;
 
   nav {
@@ -38,6 +38,10 @@ a {
 
     li {
       padding: 15px;
+    }
+
+    a {
+      color: set-text-color($primary-color);
     }
   }
 
@@ -59,13 +63,5 @@ a {
       font-size: 50px;
       line-height: 1.2;
     }
-
-    p {
-      margin: 20px 0px;
-    }
   }
-}
-
-a {
-  color: #fff;
 }
